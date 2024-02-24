@@ -177,7 +177,3 @@ class DeepLabv3(nn.Module):
     return x
  
 sem_model = DeepLabv3(183).cuda()
-
-# Instance model (Use Pretrained model - Mask RCNN)
-
-ins_model = torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)
